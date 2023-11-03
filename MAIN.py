@@ -1,5 +1,3 @@
-import guihere
-import ttv
+from guihere import callit
 
-text  = ttv.run_model()
-guihere.callit(text)
+callit()
