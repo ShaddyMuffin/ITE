@@ -1,6 +1,5 @@
-# taken the code from Google BARD
-
 # import sys
+import os
 # sys.path.append('c:\\users\\admin\\appdata\\local\\programs\\python\\python311\\lib\\site-packages')
 def convt():
 	import speech_recognition as sr
@@ -25,8 +24,7 @@ def convt():
 				# Using google to recognize audio
 				MyText = r.recognize_google(audio2)
 				MyText = MyText.lower()
-
-				print(MyText)
+				print("Your input :",MyText)
 				return MyText
 			
 		except sr.WaitTimeoutError:
@@ -35,4 +33,3 @@ def convt():
 			print("Could not request results; {0}".format(e))
 		except sr.UnknownValueError:
 			print("unknown error occurred")
-			
